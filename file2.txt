@@ -1,0 +1,1 @@
+My first fucking experience -- auth error in pushing process to Git
