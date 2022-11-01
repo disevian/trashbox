@@ -22,3 +22,16 @@ git remote -v
 git remote set-url origin *ssh_link*
 
 
+_______
+
+master -- v1 -- v2 -- v3 
+branch -- copy -- v1 -- v2 -- v3 -- v4 (merge) - slit' v4  in master
+
+git branch new_branch_name
+git branch (where u r)
+git checkout new_branch_name / master (switch to branch)
+git branch -d new_branch_name (delete the branch)
+git checkout -b kirill_new_branch (create + switch to)
+
+git merge new_branch_name
+merge соединяет коммиты которые были в брэнче - в мастер образ. после этого ветку/брэнч можно удалить
