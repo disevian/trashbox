@@ -1,0 +1,24 @@
+Git
+
+
+git config --global user.name "Kirill Bogdanov"
+git config --global user.mail "xx@yyy.mm"
+
+git init . (create Git DB..)
+
+git status
+git add . (. or *)
+git commit -m "My Comment"
+git push origin (push to Github)
+
+in project folder echo .gitignore with files/folders which git need to ignore
+
+ll ~/.ssh/
+ssh-keygen - create ssh keys (private and public) + copypaste public key to ssh keys in Git 
+
+path to Git: via dlt and clone project folder again or via:
+
+git remote -v
+git remote set-url origin *ssh_link*
+
+
