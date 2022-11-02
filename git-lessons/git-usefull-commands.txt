@@ -1,10 +1,10 @@
-Git
-
+GIT:
 
 git config --global user.name "Kirill Bogdanov"
 git config --global user.mail "xx@yyy.mm"
 
 git init . (create Git DB..)
+git init myapp (create folder)
 
 git status
 git add . (. or *)
@@ -21,11 +21,14 @@ path to Git: via dlt and clone project folder again or via:
 git remote -v
 git remote set-url origin *ssh_link*
 
+_______ 
 
-_______
+СОЗДАНИЕ И РАБОТА С ВЕТВЯМИ / BRANCH
 
 master -- v1 -- v2 -- v3 
 branch -- copy -- v1 -- v2 -- v3 -- v4 (merge) - slit' v4  in master
+
+merge соединяет коммиты которые были в брэнче - в мастер образ. после этого ветку/брэнч можно удалить
 
 git branch new_branch_name
 git branch (where u r)
@@ -34,4 +37,16 @@ git branch -d new_branch_name (delete the branch)
 git checkout -b kirill_new_branch (create + switch to)
 
 git merge new_branch_name
-merge соединяет коммиты которые были в брэнче - в мастер образ. после этого ветку/брэнч можно удалить
+
+_______
+
+ПЕРЕХОД МЕЖДУ КОММИТАМИ / ВОЗВРАТ НА ПРЕДЫДУШИЕ ВЕРСИИ
+
+git checkout #commit_hash
+git checkout master/main
+git commit --amend (изменить коммент к коммиту)
+
+git reset --hard HEAD~2 (вернуться назад на 2 коммита, удалив все последующие полностью!)
+git reset --soft HEAD~3 (удалить первых 3 коммита, сделав коммит v4 основным /самым первым)
+
+

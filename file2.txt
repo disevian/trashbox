@@ -1,4 +1,0 @@
-
-My first fucking experience -- auth error in pushing process to Git
-
-I resolve This issue due creating https-access-token in my Git Account Settings. Git push via token's hash, not password! 
